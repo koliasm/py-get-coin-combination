@@ -15,5 +15,5 @@ from app.main import get_coin_combination
               id="should_return_2quarters"),
     ]
 )
-def test_get_coin_combination(cents, expected_result):
+def test_get_coin_combination(cents: int, expected_result: list) -> None:
     assert get_coin_combination(cents) == expected_result
